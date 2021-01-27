@@ -55,6 +55,18 @@ body {
   float: right;
 }
 
+div.transbox {
+  text-align: relative;
+  width: 50%;
+  margin: 26%;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  background-color: #d6d0d0;
+  border:lightcoral;
+  opacity: .92;
+  padding: 5px 5px;
+}
+
 #inputbox{
   width: 100%;
   padding: 15px;
@@ -86,20 +98,7 @@ body {
   opacity: 1;
 }
 
-div.transbox {
-  text-align: center;
-  width: 50%;
-  margin: 26%;
-  margin-top: 150px;
-  margin-bottom: 50px;
-  background-color: #d6d0d0;
-  border:lightcoral;
-  opacity: 0.9;
-  padding: 5px 5px;
-}
-
 #cancelbtn, #signbtn {
-  float: ;
   width: 30%;
 }
 
@@ -108,9 +107,9 @@ div.transbox {
     position:relative;
   }
 
-footer {
+  footer {
   text-align: center;
-  position: relative;
+  padding: 3px;
   background-color: DarkSalmon;
   color: rgb(0, 0, 0);
 }
@@ -144,8 +143,8 @@ footer {
   </div >
   <div class="transbox">
     <form action="/action_page.php" style="border:1px">
-        <h1>Sign Up</h1>
-      <p>Fill in this form to create an account.</p>
+        <h1 style="text-align: center;">Sign Up</h1>
+      <p style="text-align: center;">Fill in this form to create an account.</p>
       <hr>
       <br>
       <label for="email"><b>Email</b></label>
@@ -161,11 +160,10 @@ footer {
         <button id="signbtn" type="submit" class="signupbtn">Sign Up</button>
         <button onclick="window.location.href='home.html'" id="cancelbtn" type="button" class="cancelbtn">Cancel</button>
       </div>
-      <br><br><br>
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
       <p>Already have an account? <a href="#" style="color:dodgerblue">Sign in / Login</a>.</p>
     </form>
   </div>
+
   <div id="link">
     <br><h3>Services :</h2>
       <a href='' style="color: rgb(85, 124, 46)">e-Exam</a> | 
