@@ -64,6 +64,10 @@ body {
   color: black;
 }
 
+#link a {
+  text-decoration: none;
+}
+
 footer {
   text-align: center;
   padding: 3px;
