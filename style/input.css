@@ -1,53 +1,54 @@
 div.transbox {
-    width: 50%;
-    margin: 26%;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    background-color: #d6d0d0;
-    border:rgb(233, 104, 104);
-    opacity: 0.92;
-  } 
-  
-  #inputbox{
-    width: 70%;
-    padding: 15px;
-    margin: 20px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  #Loginbtn{
-    background-color: #494a7c;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    opacity: 1;
-  }
+  width: 50%;
+  margin: 26%;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  background-color: #d6d0d0;
+  border: #e96868;
+  opacity: 0.92;
+}
 
-  #signbtn{
-    background-color: #494a7c;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 1;
-  }
-  
-  #cancelbtn {
-    background-color: #cf3a3a;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    opacity: 1;
-  }
-  
-  #cancelbtn,#signbtn, #Loginbtn {
-    width: 30%;
-  }
+#inputbox {
+  width: 70%;
+  padding: 15px;
+  margin: 20px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+#Loginbtn {
+  background-color: #494a7c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#signbtn {
+  background-color: #494a7c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+
+#cancelbtn {
+  background-color: #cf3a3a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#cancelbtn, #signbtn, #Loginbtn {
+  width: 30%;
+}
+/*# sourceMappingURL=input.css.map */
