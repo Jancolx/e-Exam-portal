@@ -1,3 +1,6 @@
+$navbackcol:rgb(209, 172, 117);
+$footerbackcol: rgb(172, 138, 100);
+
 .menu_simple {
 	width: 100%;
 	background-color: #005555;
@@ -35,7 +38,7 @@ body {
 	background-size: cover;
 }
 #navbar {
-	background-color: #e7cdc0;
+	background-color: $navbackcol;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -88,6 +91,6 @@ body {
 footer {
 	text-align: center;
 	padding: 3px;
-	background-color: DarkSalmon;
+	background-color: $footerbackcol;
 	color: rgb(0, 0, 0);
 }
