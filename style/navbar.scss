@@ -1,36 +1,6 @@
 $navbackcol:rgb(209, 172, 117);
 $footerbackcol: rgb(172, 138, 100);
 
-.menu_simple {
-	width: 100%;
-	background-color: #005555;
-	ul {
-		margin: 0;
-		padding: 0;
-		float: left;
-		li {
-			display: inline;
-			a {
-				float: left;
-				text-decoration: none;
-				color: white;
-				padding: 10.5px 11px;
-				background-color: #005555;
-				&:visited {
-					color: white;
-				}
-				&:hover {
-					color: white;
-					background-color: #5FD367;
-				}
-			}
-			.current {
-				color: white;
-				background-color: #5FD367;
-			}
-		}
-	}
-}
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
@@ -74,19 +44,25 @@ body {
 	float: right;
 }
 
-#wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: minmax(100px, auto);
+#srh {
+    width: 70%;
+    text-align: center;
   }
-  #box1 {
-	grid-column-start: 1;
-	grid-column-end: 4;
-  }
+
   
+.contain{
+	
+	margin: 0;
+	padding: 5px;
+	background-color: rgb(221, 191, 191);
+  }
+
 #link {
 	text-align: center;
 	position: relative;
+	h3{
+		color: black;
+	}
 }
 footer {
 	text-align: center;

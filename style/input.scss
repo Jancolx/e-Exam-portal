@@ -1,15 +1,56 @@
 form {
-    text-align: relative;
     width: 50%;
     margin: 26%;
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: relative;
     background-color: #d6d0d0;
     border:rgb(233, 104, 104);
     opacity: 0.92;
     padding: 5px 5px;
+    
   } 
+  #srh{
+    width: 80%;
+  }
+  .input-field {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 50px;
+  }
+  label#ib {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #5f5d5d;
+    transition: 0.2s all;
+    cursor: text;
+  }
+  input.anmt{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #000000;
+    box-shadow: none;
+    background-color: #d6d0d0;
+    color: #111;
+  }
+  input.anmt:invalid {
+    outline: 0;
+  }
+  input.anmt:focus,
+  input.anmt:valid, {
+    border-color: #5c83ca;
+  }
+  input.anmt:focus~label#ib,
+  input.anmt:valid~label#ib {
+    font-size: 14px;
+    top: -24px;
+    color: #466072;
+  }
   
+
   #inputbox{
     width: 70%;
     padding: 15px;

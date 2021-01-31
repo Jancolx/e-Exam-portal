@@ -2,10 +2,10 @@
 <html>
 <title>Sign up</title>
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style/navbar.css">
-  <link rel="stylesheet" href="style/input.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style/navbar.css">
+<link rel="stylesheet" href="style/input.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box;}
@@ -17,7 +17,8 @@ body {
 #inputbox{
     width: 100%;
 }
-.transbox label{
+
+form label{
   padding: 1%;
 }
 
@@ -30,29 +31,39 @@ body {
       <a href="home.html">Home</a>
       <a href="login.html">login</a>
       <a id="active"" href="#default">Sign Up</a><br>
-      <input type="text" placeholder="Search" name="search">
+      <input id="srh" type="text" placeholder="Search" name="search" autocomplete="off">
       <button type="submit"><i class="fa fa-search"></i></button>
     </div>
   </div >
+  <div>
     <form action="/action_page.php" >
         <h1 style="text-align: center;">Sign Up</h1>
       <p style="text-align: center;">Fill in this form to create an account.</p>
       <hr>
+      <div class="input-field">
+        <input class="anmt" type="text" id="name" required autocomplete="off" >
+        <label id="ib" for="name">Name</label>
+      </div>
+     <br>
+      <div class="input-field">
+        <input class="anmt" type="text" id="id" required >
+        <label id="ib" for="id">ID</label>
+      </div>
       <br>
-      <label for="Name"><b>Name</b></label><br>
-      <input id="inputbox" type="text" placeholder="Enter Name" name="Name" required autocomplete="off">
+      <div class="input-field">
+        <input class="anmt" type="password" id="psw" required >
+        <label id="ib" for="psw">Password</label>
+      </div>
       <br>
-      <label for="ID"><b>ID</b></label><br>
-      <input id="inputbox" type="text" placeholder="Enter ID" name="ID" required>
+      <div class="input-field">
+        <input class="anmt" type="email" id="email" required autocomplete="off" >
+        <label id="ib" for="email">Email</label>
+      </div>
       <br>
-      <label for="psw"><b>Password</b></label><br>
-      <input id="inputbox" type="password" placeholder="Enter Password" name="psw" required>
-      <br>
-      <label for="email"><b>Email</b></label><br>
-      <input id="inputbox" type="text" placeholder="Enter Email" name="email" required>
-      <br>
-      <label for="Age"><b>Age</b></label><br>
-      <input id="inputbox" type="text" placeholder="Enter Age" name="Age" required>
+      <div class="input-field">
+        <input class="anmt" type="text" id="Age" required >
+        <label id="ib" for="Age">Age</label>
+      </div>
       <br>
       <label for="Gender"><b>Gender:</b></label><br>
       <input type="radio" id="male" name="gender" value="male">
@@ -60,13 +71,16 @@ body {
       <input type="radio" id="female" name="gender" value="female">
       <label for="female">Female</label>
       <input type="radio" id="other" name="gender" value="other">
-      <label for="other">No please god no.Why</label>
-      <br><br>
-      <label for="College Address"><b>College Address</b></label><br>
-      <input id="inputbox" type="text" placeholder="Enter College Address" name="College Address" required>
+      <label for="other">No god please no.Why</label>
+      <br>
+      <div class="input-field">
+        <input class="anmt" type="text" id="College Address" required >
+        <label id="ib" for="College Address">College Address</label>
+      </div>
       <br>
       <label for="Branch"><b>Branch:</b></label>
-      <select name="Branch" id="Branch">
+        <select name="Branch" id="Branch">
+        <option value="" selected disabled hidden>Choose MC</option>
         <option value="Cse">Cse</option>
         <option value="Ece">Ece</option>
         <option value="EEE">EEE</option>
@@ -91,7 +105,7 @@ body {
       </div>
       <p>Already have an account? <a href="#" style="color:dodgerblue">Sign in / Login</a>.</p>
     </form>
-
+  </div>
 
   <div id="link">
     <br><h3>Services :</h2>

@@ -14,10 +14,6 @@ body {
   background-image: url('image/1.jpeg');
 }
 
-div.transbox {
-    text-align: center;
-}
-
 </style>
 </head>
 
@@ -28,7 +24,7 @@ div.transbox {
       <a href="home.html">Home</a>
       <a id="active" href="#default">login</a>
       <a href="Sign Up.html">Sign Up</a><br>
-      <input type="text" placeholder="Search" name="search">
+      <input id="srh" type="text" placeholder="Search" name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </div>
   </div >
@@ -37,21 +33,22 @@ div.transbox {
       <h1 style="text-align: center;">Login</h1>
       <p style="text-align: center;">Fill in this form to create an account.</p>
       <hr>
+      <div class="input-field">
+        <input class="anmt" type="text" id="name" required autocomplete="off" >
+        <label id="ib" for="name">Name</label>
+      </div>
       <br>
-      <label for="uname"><b>Username</b></label>
-      <input id="inputbox" type="text" placeholder="Enter Username" name="uname" required>
-
       <br>
-      <label for="psw"><b>Password</b></label>
-      <input id="inputbox" type="password" placeholder="Enter Password" name="psw" required>
+      <div class="input-field">
+        <input class="anmt" type="password" id="password" required >
+        <label id="ib" for="password">Password</label>
+      </div>
       <br>
-      <div >
         <button id="Loginbtn" type="submit" class="Loginbtn">Login</button>
         <button id="cancelbtn" type="reset" class="cancelbtn">Reset</button>
       </div>
       <p>Need an account? <a href="Sign Up.html" style="color:dodgerblue">Sign up now!</a>.</p>
     </form>
-
 
   <div id="link">
     <br><h3>Services :</h2>
