@@ -42,15 +42,6 @@ input.anmt {
   color: #111;
 }
 
-input.anmt:invalid {
-  outline: 0;
-}
-
-input.anmt:focus,
-input.anmt:valid {
-  border-color: #5c83ca;
-}
-
 input.anmt:focus ~ label#ib,
 input.anmt:valid ~ label#ib {
   font-size: 14px;
@@ -58,19 +49,10 @@ input.anmt:valid ~ label#ib {
   color: #466072;
 }
 
-#inputbox {
-  width: 70%;
-  padding: 15px;
-  margin: 20px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
 #Loginbtn {
   background-color: #494a7c;
   color: white;
-  padding: 14px 20px;
+  padding: 9px 10px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
@@ -80,7 +62,7 @@ input.anmt:valid ~ label#ib {
 #signbtn {
   background-color: #494a7c;
   color: white;
-  padding: 14px 20px;
+  padding: 9px 10px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
@@ -91,14 +73,17 @@ input.anmt:valid ~ label#ib {
 #cancelbtn {
   background-color: #cf3a3a;
   color: white;
-  padding: 14px 20px;
+  padding: 9px 10px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   opacity: 1;
 }
 
-#cancelbtn, #signbtn, #Loginbtn {
+#cancelbtn,
+#signbtn,
+#Loginbtn {
+  border-radius: 30px;
   width: 30%;
 }
 /*# sourceMappingURL=input.css.map */
