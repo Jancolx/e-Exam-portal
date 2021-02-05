@@ -22,6 +22,15 @@ body {
     <a href="home.html" id="logo" style="font-size: 25px;">E-Exam</a>
     <div id="navbar-right">
       <a href="home.html">Home</a>
+      <div class="Services">
+        <button onclick="location.href='service.html'" class="dropbtn" >Services</button>
+        <div class="Services-content">
+          <a href=''>e-Exam</a><br>
+          <a href=''>Openforum</a><br>
+          <a href=''>e-Repository</a><br>
+          <a href='mywall.html'>MyWall</a>
+        </div>
+      </div>
       <a id="active" href="#default">login</a>
       <a href="Sign Up.html">Sign Up</a><br>
       <input id="srh" type="text" placeholder="Search" name="search" autocomplete="off">
@@ -29,7 +38,7 @@ body {
     </div>
   </div >
 
-    <form action="/action_page.php" >
+    <form action="/action_page.php" style="position: relative;">
       <h1 style="text-align: center;">Login</h1>
       <p style="text-align: center;">Fill in this form to create an account.</p>
       <hr>

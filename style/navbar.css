@@ -11,6 +11,7 @@ body {
   width: 100%;
   top: 0;
   opacity: 0.9;
+  border-radius: 9px;
   z-index: 99;
 }
 
@@ -48,15 +49,55 @@ body {
   width: 100%;
   text-align: center;
   border-radius: 15px;
-  -webkit-box-decoration-break: none;
-          box-decoration-break: none;
   border: none;
 }
 
-.contain {
+.Services {
+  float: left;
+  border-radius: 6px;
+}
+
+.Services .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: inherit;
   margin: 0;
-  padding: 5px;
-  background-color: #ddbfbf;
+}
+
+.Services:hover .dropbtn {
+  background-color: #ddd;
+  border-radius: 4px;
+  color: black;
+}
+
+.Services-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.Services-content a {
+  float: none;
+  color: black;
+  display: block;
+  text-align: center;
+}
+
+.Services-content a:hover {
+  width: 160px;
+  background-color: #dddddd;
+}
+
+.Services:hover .Services-content {
+  display: block;
 }
 
 #link {
@@ -74,7 +115,8 @@ body {
 
 footer {
   text-align: center;
-  padding: 3px;
+  float: inline-end;
+  padding:3px;
   background-color: #ac8a64;
   color: black;
 }

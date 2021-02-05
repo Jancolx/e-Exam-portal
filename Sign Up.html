@@ -29,6 +29,15 @@ form label{
     <a href="home.html" id="logo" style="font-size: 25px;">E-Exam</a>
     <div id="navbar-right">
       <a href="home.html">Home</a>
+      <div class="Services">
+        <button onclick="location.href='service.html'" class="dropbtn" >Services</button>
+        <div class="Services-content">
+          <a href=''>e-Exam</a><br>
+          <a href=''>Openforum</a><br>
+          <a href=''>e-Repository</a><br>
+          <a href='mywall.html'>MyWall</a>
+        </div>
+      </div>
       <a href="login.html">login</a>
       <a id="active"" href="#default">Sign Up</a><br>
       <input id="srh" type="text" placeholder="Search" name="search" autocomplete="off">
@@ -71,7 +80,7 @@ form label{
       <input type="radio" id="female" name="gender" value="female">
       <label for="female">Female</label>
       <input type="radio" id="other" name="gender" value="other">
-      <label for="other">No god please no.Why</label>
+      <label for="other">Prefer not to say</label>
       <br>
       <div class="input-field">
         <input class="anmt" type="text" id="College Address" required >
@@ -80,7 +89,7 @@ form label{
       <br>
       <label for="Branch"><b>Branch:</b></label>
         <select name="Branch" id="Branch">
-        <option value="" selected disabled hidden>Choose MC</option>
+        <option value="" selected disabled hidden>Choose Branch</option>
         <option value="Cse">Cse</option>
         <option value="Ece">Ece</option>
         <option value="EEE">EEE</option>
