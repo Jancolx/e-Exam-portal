@@ -1,8 +1,7 @@
 form {
   width: 50%;
-  margin: 26%;
+  margin: auto;
   margin-top: 150px;
-  margin-bottom: 150px;
   background-color: #d6d0d0;
   border: rgb(233, 104, 104);
   opacity: 0.92;
@@ -43,7 +42,7 @@ input.anmt:valid ~ label#ib {
   color: #466072;
 }
 
-#Loginbtn {
+#Loginbtn,#signbtn {
   background-color: #494a7c;
   color: white;
   padding: 9px 10px;
@@ -51,17 +50,7 @@ input.anmt:valid ~ label#ib {
   border: none;
   cursor: pointer;
   opacity: 1;
-}
-
-#signbtn {
-  background-color: #494a7c;
-  color: white;
-  padding: 9px 10px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 1;
+  outline: none;
 }
 
 #cancelbtn {
@@ -72,6 +61,7 @@ input.anmt:valid ~ label#ib {
   border: none;
   cursor: pointer;
   opacity: 1;
+  outline:none;
 }
 
 #cancelbtn,
@@ -79,4 +69,18 @@ input.anmt:valid ~ label#ib {
 #Loginbtn {
   border-radius: 30px;
   width: 30%;
+}
+#cancelbtn:active{
+  background-color: rgb(138, 0, 0);
+  transform: translateY(2px);
+}
+#signbtn:active,
+#Loginbtn:active{ 
+    background-color: rgb(0, 37, 116);
+    transform: translateY(2px);
+ }
+ #cancelbtn:hover,
+ #signbtn:hover,
+ #Loginbtn:hover {
+  opacity: 0.9;
 }

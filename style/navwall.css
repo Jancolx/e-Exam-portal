@@ -44,38 +44,13 @@ body {
   float: right;
 }
 
-#srh {
+footer {
+  position: absolute;
   width: 100%;
   text-align: center;
-  border-radius: 15px;
-  -webkit-box-decoration-break: none;
-          box-decoration-break: none;
-  border: none;
-}
-
-.contain {
-  margin: 0;
-  padding: 5px;
-  background-color: #ddbfbf;
-}
-
-#link {
-  text-align: center;
-  position: relative;
-}
-
-#link h3 {
-  color: black;
-}
-
-#link a {
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  padding: 3px;
+  bottom: 0;
   background-color: #8a7596;
   color: black;
+  opacity: 0.9;
 }
 /*# sourceMappingURL=navwall.css.map */

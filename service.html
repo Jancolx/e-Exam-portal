@@ -9,19 +9,59 @@
 * {box-sizing: border-box;}
 
 body { 
-  background-image: url("image/img1.jpeg");
   overflow: hidden;
+  background-image: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url("image/pexels-maria-gloss-4197693.jpg");
+}
+
+.container
+{
+    height: 100%; 
+    min-height: 100%;
+}
+
+.first {
+    float: left;
+    width: 20%;
+    height: 30%;
+    background-color: red;
+}
+
+.second{
+    float: left;
+    width: 20%;
+    height: 70%;
+    background-color: green;
 }
 
 
+.third{
+    float: right;
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+}
 
+.fourth {
+    float: right;
+    width: 40%;
+    height: 20%;
+    background-color: #DDDDDD;
+}
+
+.last{
+    float: right;
+    width: 40%;
+    height: 20%;
+    background-color: yellow;
+}
 
 </style>
 </head>
+
 <body>
 
   <div id="navbar" style="padding: 10px 10px;">
-    <a href="#default" id="logo" style="font-size: 35px;">E-Exam</a>
+    <a href="#default" id="logo" style="font-size: 25px;">E-Exam</a>
     <div id="navbar-right">
       <a href="home.html">Home</a>
       <div id="active" class="Services">
@@ -36,14 +76,12 @@ body {
       <a href="login.html">login</a>
       <a href="Sign Up.html">Sign Up</a>
       <br><input id="srh" style="width:70%" type="text" placeholder="Search" name="search" autocomplete="off">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button id="srhbtn" type="submit"><i class="fa fa-search"></i></button>
     </div>
-  </div>
+  </div><br>
 
-<br>
-    
-  </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
   <footer>
     <p>© 2021: B.S Ray(Jancol)</p>
   </footer>

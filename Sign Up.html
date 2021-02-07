@@ -11,20 +11,13 @@
 * {box-sizing: border-box;}
 
 body { 
-  background-image: url("image/3.jpeg");
-}
-
-#inputbox{
-    width: 100%;
-}
-
-form label{
-  padding: 1%;
+  background-image: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url("image/3.jpeg");
 }
 
 </style>
 </head>
 <body>
+
   <div id="navbar" style="padding: 10px 10px;">
     <a href="home.html" id="logo" style="font-size: 25px;">E-Exam</a>
     <div id="navbar-right">
@@ -41,26 +34,27 @@ form label{
       <a href="login.html">login</a>
       <a id="active"" href="#default">Sign Up</a><br>
       <input id="srh" type="text" placeholder="Search" name="search" autocomplete="off">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button id="srhbtn" type="submit"><i class="fa fa-search"></i></button>
     </div>
   </div >
+
   <div>
-    <form action="/action_page.php" >
+    <form action="/action_page.php" style="margin-bottom: 100px;">
         <h1 style="text-align: center;">Sign Up</h1>
       <p style="text-align: center;">Fill in this form to create an account.</p>
       <hr>
       <div class="input-field">
-        <input class="anmt" type="text" id="name" required autocomplete="off" >
+        <input class="anmt" type="text" id="name" required autocomplete="off">
         <label id="ib" for="name">Name</label>
       </div>
      <br>
       <div class="input-field">
-        <input class="anmt" type="text" id="id" required >
+        <input class="anmt" type="text" id="id" required autocomplete="off" >
         <label id="ib" for="id">ID</label>
       </div>
       <br>
       <div class="input-field">
-        <input class="anmt" type="password" id="psw" required >
+        <input class="anmt" type="password" id="psw" required autocomplete="off">
         <label id="ib" for="psw">Password</label>
       </div>
       <br>
@@ -70,7 +64,7 @@ form label{
       </div>
       <br>
       <div class="input-field">
-        <input class="anmt" type="text" id="Age" required >
+        <input class="anmt" type="text" id="Age" required autocomplete="off">
         <label id="ib" for="Age">Age</label>
       </div>
       <br>
@@ -81,9 +75,9 @@ form label{
       <label for="female">Female</label>
       <input type="radio" id="other" name="gender" value="other">
       <label for="other">Prefer not to say</label>
-      <br>
+      <br><br>
       <div class="input-field">
-        <input class="anmt" type="text" id="College Address" required >
+        <input class="anmt" type="text" id="College Address" required autocomplete="off">
         <label id="ib" for="College Address">College Address</label>
       </div>
       <br>
@@ -115,16 +109,9 @@ form label{
       <p>Already have an account? <a href="login.html" style="color:dodgerblue">Sign in / Login</a>.</p>
     </form>
   </div>
-
-  <div id="link">
-    <br><h3>Services :</h2>
-      <a href='' style="color: rgb(85, 124, 46)">e-Exam</a> | 
-      <a href='' style="color:  rgb(85, 124, 46)">Openforum</a> | 
-      <a href='' style="color:  rgb(85, 124, 46)">e-Repository</a> | 
-      <a href='mywall.html' style="color:  rgb(85, 124, 46)">MyWall</a>
-</div>
-<footer>
-  <p>© 2021: B.S Ray(Jancol)</p>
-</footer>
+  <footer style=" position: relative;">
+    <p>© 2021: B.S Ray(Jancol)</p>
+  </footer>
+  </div>
 </body>
 </html>

@@ -9,7 +9,8 @@
 * {box-sizing: border-box;}
 
 body { 
-  background-image: url("image/img1.jpeg");
+  overflow: hidden;
+  background-image: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url("image/pexels-cottonbro-4769464.jpg");
 }
 
 .contain{
@@ -22,10 +23,10 @@ body {
 
 @keyframes background {
   from{
-    background: #c9b7ae;
+    background: #babadd;
   }
   to{
-    background: #df9976;
+    background: #77a1ee;
   }
 }
 
@@ -49,16 +50,19 @@ body {
       <a href="login.html">login</a>
       <a href="Sign Up.html">Sign Up</a>
       <br><input id="srh" style="width:70%" type="text" placeholder="Search" name="search" autocomplete="off">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button id="srhbtn" type="submit"><i class="fa fa-search"></i></button>
     </div>
   </div>
 
 <br>
-  <div style="margin-top:210px;padding:15px 25px 400px;font-size:20px">
-   <article class="contain"> <p>
-    This contain exam portal services.<br>Thank You.
-    </p>
-  </article>
+  <div style="margin-top:210px;padding:15px 25px 400px;">
+    <article class="contain" style="width: auto;text"> 
+      <pre style="font-size:20px;"">
+        <span style="font-size:50px;opacity:0.2">&#10077;</span>
+        This website provides exam portal services.
+        Thank You.
+      </pre>
+    </article>
   </div>
 
   <footer>
