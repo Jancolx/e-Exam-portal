@@ -85,7 +85,7 @@ input.anmt:valid ~ label#ib {
 
 #signbtn:active,
 #Loginbtn:active {
-  background-color: #002574;
+  background-color: #303179;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
