@@ -21,7 +21,7 @@ label#ib {
   top: 0;
   left: 0;
   width: 100%;
-  color: #5f5d5d;
+  color: #929191;
   transition: 0.2s all;
   cursor: text;
 }
@@ -39,7 +39,7 @@ input.anmt:focus ~ label#ib,
 input.anmt:valid ~ label#ib {
   font-size: 14px;
   top: -24px;
-  color: #466072;
+  color: #000000;
 }
 
 #Loginbtn,#signbtn {

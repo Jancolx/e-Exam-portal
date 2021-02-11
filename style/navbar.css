@@ -4,7 +4,8 @@ body {
 }
 
 #navbar {
-  background-color: #9d7ae7;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#57599c), to(#f8a5e6));
+  background-image: linear-gradient(to top right, #57599c 0%, #f8a5e6 100%);
   position: fixed;
   width: 100%;
   top: 0;
@@ -106,7 +107,8 @@ footer {
   width: 100%;
   text-align: center;
   bottom: 0;
-  background-color: #7153b6;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#57599c), to(#af7bda));
+  background-image: linear-gradient(to top right, #57599c 0%, #af7bda 100%);
   color: black;
   opacity: 0.9;
 }

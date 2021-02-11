@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style/navbar.css">
 <link rel="stylesheet" href="style/input.css">
+<script src="validation.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box;}
@@ -15,6 +16,7 @@ body {
 }
 
 </style>
+
 </head>
 <body>
 
@@ -32,44 +34,44 @@ body {
         </div>
       </div>
       <a href="login.html">login</a>
-      <a id="active"" href="#default">Sign Up</a><br>
+      <a id="active" href="#default">Sign Up</a><br>
       <input id="srh" type="text" placeholder="Search" name="search" autocomplete="off">
       <button id="srhbtn" type="submit"><i class="fa fa-search"></i></button>
     </div>
   </div >
 
   <div>
-    <form action="/action_page.php" style="margin-bottom: 100px;">
-        <h1 style="text-align: center;">Sign Up</h1>
+    <form id="Form" action="" style="margin-bottom: 100px;">
+      <h1 style="text-align: center;">Sign Up</h1>
       <p style="text-align: center;">Fill in this form to create an account.</p>
       <hr>
       <div class="input-field">
-        <input class="anmt" type="text" id="name" required autocomplete="off">
+        <input class="anmt" type="text" id="name" required  >
         <label id="ib" for="name">Name</label>
       </div>
      <br>
       <div class="input-field">
-        <input class="anmt" type="text" id="id" required autocomplete="off" >
+        <input class="anmt" type="text" id="id" required  >
         <label id="ib" for="id">ID</label>
       </div>
       <br>
       <div class="input-field">
-        <input class="anmt" type="password" id="psw" required autocomplete="off">
+        <input class="anmt" type="password" id="psw" required >
         <label id="ib" for="psw">Password</label>
       </div>
       <br>
       <div class="input-field">
-        <input class="anmt" type="email" id="email" required autocomplete="off" >
+        <input class="anmt" type="email" id="email" required  >
         <label id="ib" for="email">Email</label>
       </div>
       <br>
       <div class="input-field">
-        <input class="anmt" type="text" id="Age" required autocomplete="off">
+        <input class="anmt" type="text" id="Age" required >
         <label id="ib" for="Age">Age</label>
       </div>
       <br>
       <label for="Gender"><b>Gender:</b></label><br>
-      <input type="radio" id="male" name="gender" value="male">
+      <input type="radio" id="male" name="gender" value="male" required>
       <label for="male">Male</label>
       <input type="radio" id="female" name="gender" value="female">
       <label for="female">Female</label>
@@ -77,12 +79,12 @@ body {
       <label for="other">Prefer not to say</label>
       <br><br>
       <div class="input-field">
-        <input class="anmt" type="text" id="College Address" required autocomplete="off">
+        <input class="anmt" type="text" id="College Address" required >
         <label id="ib" for="College Address">College Address</label>
       </div>
       <br>
       <label for="Branch"><b>Branch:</b></label>
-        <select name="Branch" id="Branch">
+        <select name="Branch" id="Branch" required>
         <option value="" selected disabled hidden>Choose Branch</option>
         <option value="Cse">Cse</option>
         <option value="Ece">Ece</option>
@@ -101,17 +103,22 @@ body {
       <label for="Jsp">Jsp</label>
       <br><br>
       <label for="Resume Upload"><b>Resume Upload :</b></label>
-      <input type="file"><br><br>
+      <input type="file" required><br><br>
       <div>
-        <button id="signbtn" type="submit" class="signupbtn">Sign Up</button>
+      <p id="demo"></p>
+        <button id="signbtn" type="submit" onclick="return validate()" class="signupbtn">Sign Up</button>
         <button id="cancelbtn" type="reset" class="cancelbtn">Reset</button>
       </div>
       <p>Already have an account? <a href="login.html" style="color:dodgerblue">Sign in / Login</a>.</p>
     </form>
   </div>
-  <footer style=" position: relative;">
+  <footer style=" position: fixed;">
     <p>© 2021: B.S Ray(Jancol)</p>
   </footer>
   </div>
+
+  
+
+
 </body>
 </html>
