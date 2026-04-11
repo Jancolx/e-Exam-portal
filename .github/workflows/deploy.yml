@@ -6,8 +6,8 @@ on:
       - main  # Triggers the live deployment whenever you push to main
 
 jobs:
- # deploy:
-  #  runs-on: ubuntu-latest
+ deploy:
+    #runs-on: ubuntu-latest
 
     steps:
       # 1. Pull the code from your GitHub repo onto the runner
