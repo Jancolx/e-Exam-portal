@@ -6,13 +6,13 @@ on:
       - main  # Triggers the live deployment whenever you push to main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+ # deploy:
+  #  runs-on: ubuntu-latest
 
     steps:
       # 1. Pull the code from your GitHub repo onto the runner
-      - name: Checkout Code
-        uses: actions/checkout@v4
+     - name: Checkout Code
+     #   uses: actions/checkout@v4
 
       # 2. Log in to AWS using your GitHub Secrets
       - name: Configure AWS Credentials
