@@ -1,15 +1,24 @@
 name: Exam-portal
 
 on:
- push: 
-   branches: 
-     - main
- workflow_dispatch:
+  workflow_dispatch:
+    inputs:
+      resource_addr:
+        description: "Terraform Resource Address (only used if running on terraform branch)"
+        required: false
+        type: string
+        default: "aws_s3_bucket.main"
+      resource_id:
+        description: "Infrastructure ID to import (only used if running on terraform branch)"
+        required: false
+        type: string
+        default: "examportal-jancol"
 
 jobs:
   deploy:
+    # Only run the deploy job on the 'main' branch
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-  
 
     steps:
       - name: Checkout Code
@@ -29,3 +38,39 @@ jobs:
       - name: Invalidate CloudFront Cache
         run: |
           aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
+
+  terraform_import:
+    # Only run the terraform job on the 'terraform' branch
+    if: github.ref == 'refs/heads/terraform'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: terraform
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Import
+        run: |
+          # Use github.event.inputs if triggered manually, otherwise you can hardcode here.
+          terraform import "${{ github.event.inputs.resource_addr }}" "${{ github.event.inputs.resource_id }}"
+
+      - name: Upload State Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: terraform-state
+          path: terraform/terraform.tfstate
